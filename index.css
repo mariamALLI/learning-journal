@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.94rem;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    padding: 1em 0.7em;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 0;
+}
+
+.nav-logo {
+    width: 30px;
+}
+
+.navbar,
+.nav_logotxt {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    background: #212227;
+    position: fixed;
+    top: -15px;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding: 1.5em 2em;
+    color: #fff;
+    transition: left 0.5s;
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 2.5em;
+    width: 25px;
+}
+
+.main {
+    background-image: url(images/article-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-img {
+    width: 338px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #202020;
+}
+
+/* blog styling layout */
+.main-img {
+    width: 100%;
+    height: 50%;
+}
+
+/* Aboutme styling layout */
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #212227;
+}
+
+.grid-flow {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+/* Typography */
+.nav_heading {
+    font-size: 1rem;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 1em;
+    padding-top: 1.3em;   
+}
+
+.nav_link {
+    text-decoration: none;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    opacity: 0.8;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    opacity: .5;
+    font-size: 1.2rem;
+}
+
+.main-txt {
+    color: hsl(36, 100%, 99%);
+    max-width: 550px;
+    text-shadow: 5px 5px 5px #0A0A0B;
+}
+
+.main-txt2 {
+    margin-left: 2em;
+}
+
+.main-txt2,
+.main-text {
+    color: #151515;
+    max-width: 550px;
+    /* text-shadow: 5px 5px 5px #0A0A0B; */
+}
+
+.main-txt .date,
+.main-txt2 .date{
+    margin-bottom: -1.5em;
+   
+}
+
+.main-txt .date {
+    margin-top: 5em;
+}
+
+.main-txt h2,
+.main-txt2 h2 {
+    font-size: 2rem;
+    margin-bottom: -0.2em;
+}
+
+.mini-date,
+.mini-sm-txt {
+    color: #505050;
+    font-size: .9rem;
+}
+
+.mini-txt {
+    margin-top: 0.1em;
+}
+
+.main-sm-text,
+.main-sm-text2 {
+    font-size: 1rem;
+    color: #151515;
+}
+
+.mini-sm-txt,
+.main-sm-text,
+.main-sm-text2 {
+   max-width: 450px;
+}
+
+.mini-sm-txt,
+.mini-txt {
+    margin-bottom: 0.5em;
+}
+
+.mini-link {
+    font-weight: 800;
+    color: #0A0A0B;
+}
+
+.mini-blog-link,
+.blog-post {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.footer {
+    color: #ECECEC;
+    text-align: center;
+    line-height: 0.5;
+}
+
+.foot-txt,
+.foot-sm-txt {
+    font-size: 0.85rem;
+}
+
+.foot-sm-txt {
+    color: #D7D7D7;
+}
+
+
+@media (min-width: 800px) {
+    .close,
+    .open {
+      display: none;
+    }
+  
+    .navbar {
+      height: 6.5vh;
+    }
+
+    .nav_logotxt{
+        align-self: flex-start;
+        margin-top: -1em;
+    }
+  
+    .navbar ul {
+      position: relative;
+      left: -9em;
+      top: 23.5em;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .nav_link {
+      margin-left: 2.5em;
+      color: #0A0A0B;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+    }
+
+    body {
+        background-color: #FAFAFA;
+    }
+
+    header {
+        background-color: #fff;
+    }
+
+    .main {
+        background-image: url(images/laptop-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 6em;
+    }
+
+    .nav_heading {
+        font-size: 1.5rem;
+        color: #1B1B1E;
+    }
+
+    .nav-logo {
+        width: 40px;
+    }
+
+    .main-txt .date,
+    .main-txt p {
+        font-size: 1.5rem;
+    }
+
+    .main-txt h2 {
+        font-size: 3rem;
+    }
+
+    .main-txt {
+        margin-top: 2em;
+        max-width: 900px;
+        margin-left: -3em;
+    }
+    
+    .grid {
+        grid-template-columns: auto auto auto;
+        margin-top: 2em;
+    }
+
+    .main-txt2,
+    .main-sm-text,
+    .main-sm-text2 {
+        max-width: 1100px;
+    }
+
+    .main-sm-text,
+    .main-sm-text2,
+    .main-txt2 .date {
+        font-size: 1.2rem;
+    }
+
+    .main-txt2 .date {
+        margin-bottom: 0.5em;
+    }
+
+    .main-txt2 h2 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5em;
+    }
+
+    .main-txt2 p {
+        font-size: 1.5rem;
+    }
+
+    .main-img {
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .main-text {
+        font-size: 2rem;
+    }
+
+    .grid-flow {
+        grid-template-columns: auto auto;
+        align-items: flex-start;
+        gap: 45px;
+    }
+}    
