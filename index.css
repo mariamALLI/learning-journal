@@ -135,13 +135,11 @@ ul li {
 .main-text {
     color: #151515;
     max-width: 550px;
-    /* text-shadow: 5px 5px 5px #0A0A0B; */
 }
 
 .main-txt .date,
 .main-txt2 .date{
-    margin-bottom: -1.5em;
-   
+    margin-bottom: -1.5em;  
 }
 
 .main-txt .date {
